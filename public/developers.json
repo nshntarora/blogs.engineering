@@ -235,5 +235,15 @@
     "newsletter": "",
     "description": "Golang Product Lead at Google. Creator of Hugo.",
     "link": "https://spf13.com/"
+  },
+  {
+    "name": "Dave Cheney",
+    "tags": "golang",
+    "feed": "https://dave.cheney.net/feed/atom",
+    "twitter": "@davecheney",
+    "newsletter": "",
+    "description": "Member of Technical Staff at VMWare. Project Member, Golang.",
+    "link": "https://dave.cheney.net"
   }
+  
 ]
