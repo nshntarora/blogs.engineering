@@ -91,7 +91,7 @@
                       View Latest Posts
                     </span>
                     <div
-                      class="latest-posts-list"
+                      class="latest-posts-list mt-2"
                       v-if="fetchedPosts && fetchedPosts[developer.twitter]"
                     >
                       <div
@@ -119,7 +119,17 @@
                         </div>
                       </div>
                       <div v-else>
-                        {{ fetchedPosts[developer.twitter].error }}
+                        {{ fetchedPosts[developer.twitter].error }}<br /><br />
+                        It's usually due to
+                        <a
+                          href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS"
+                          target="_blank"
+                          >CORS</a
+                        >. So, here is their feed URL in case you want to
+                        subscribe any other way,
+                        <a :href="developer.feed" target="_blank">{{
+                          developer.feed
+                        }}</a>
                       </div>
                     </div>
                   </div>
