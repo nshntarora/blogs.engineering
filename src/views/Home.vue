@@ -160,7 +160,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3 mb-4">
         <div class="search-wrapper w-100">
           <input
             class="search-input w-100"

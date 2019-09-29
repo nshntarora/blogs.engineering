@@ -78,6 +78,19 @@
         </div>
       </div>
       <div class="col-md-3">
+        <div :href="$route.fullPath" class="bookmark-block mb-3">
+          <div class="title mb-2">
+            bookmark this page
+          </div>
+          <div class="description">
+            to save this feed and come back to it in the future bookmark this
+            page by pressing Cmd/Ctrl + D or drag the link below to your
+            bookmarks bar
+          </div>
+          <a :href="feedLink">
+            feed - blogs.engineering
+          </a>
+        </div>
         <div class="sidebar-block mb-4">
           <div class="sidebar-title mb-2">
             developers powering this feed
@@ -145,7 +158,7 @@ import developers from "../../public/developers.json";
 export default {
   name: "YourFeed",
   metaInfo: {
-    title: "My Feed - blogs.engineering"
+    title: "feed - blogs.engineering"
   },
   data() {
     return {
@@ -168,6 +181,9 @@ export default {
           new Date(a.updated).toISOString() < new Date(b.updated).toISOString()
         );
       });
+    },
+    feedLink() {
+      return window.location.href;
     }
   },
   methods: {
