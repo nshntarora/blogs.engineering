@@ -262,5 +262,32 @@
     "newsletter": "",
     "description": "Author of Ruby Under a Microscope. Ruby developer at Apple",
     "link": "http://patshaughnessy.net"
+  },
+  {
+    "name": "Rachel Nabors",
+    "tags": "animation, design, react",
+    "feed": "http://feeds.feedburner.com/RachelNabors",
+    "twitter": "@rachelnabors",
+    "newsletter": "",
+    "description": "Core Team at React.js, Web Animations Expert at the W3C",
+    "link": "http://rachelnabors.com/archive/"
+  },
+  {
+    "name": "Rachel Andrew",
+    "tags": "css, frontend development",
+    "feed": "https://rachelandrew.co.uk/archives/rss.php",
+    "twitter": "@rachelandrew",
+    "newsletter": "",
+    "description": "Member of the CSS Working Group. Editor in Chief of Smashing Magazine",
+    "link": "https://rachelandrew.co.uk/archives/"
+  },
+  {
+    "name": "Lara Schenck",
+    "tags": "css, frontend development",
+    "feed": "https://feeds.feedburner.com/notlaura",
+    "twitter": "@laras126",
+    "newsletter": "",
+    "description": "Design Engineer at Penske Media (PMC)",
+    "link": "https://notlaura.com/blog/"
   }
 ]

@@ -50,7 +50,7 @@
                     </a>
                   </div>
                   <div class="description" v-if="developer.description">
-                    {{ developer.description.slice(0, 50) }}
+                    {{ developer.description }}
                   </div>
                   <a class="link" :href="developer.link" target="_blank">{{
                     developer.link
