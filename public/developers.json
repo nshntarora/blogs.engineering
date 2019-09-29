@@ -301,11 +301,20 @@
   },
   {
     "name": "Jake Wharton",
-    "tags": "android, java",
+    "tags": "android, java, kotlin",
     "feed": "https://jakewharton.com/feed.xml",
     "twitter": "@JakeWharton",
     "newsletter": "",
     "description": "Android Engineer at Google",
     "link": "https://jakewharton.com/blog/"
+  },
+  {
+    "name": "Dan Lew",
+    "tags": "android, java, kotlin",
+    "feed": "https://blog.danlew.net/rss/",
+    "twitter": "@danlew42",
+    "newsletter": "",
+    "description": "Android Engineer at Trello",
+    "link": "https://blog.danlew.net/"
   }
 ]
