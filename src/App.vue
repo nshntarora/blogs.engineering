@@ -6,6 +6,16 @@
       /></router-link>
       <h1 class="mb-3">blogs.engineering</h1>
       <p>discover great engineering blogs by great developers</p>
+      <div class="mt-4">
+        <a
+          class="github-button"
+          href="https://github.com/nshntarora/blogs.engineering"
+          data-size="large"
+          data-show-count="true"
+          aria-label="Star nshntarora/blogs.engineering on GitHub"
+          >Star</a
+        >
+      </div>
     </header>
     <router-view />
   </div>
