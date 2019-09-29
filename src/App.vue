@@ -1,20 +1,31 @@
 <template>
   <div class="container-fluid">
     <header class="header">
-      <router-link to="/"
-        ><img src="/img/blogs.engineering.svg" height="100" width="100"
-      /></router-link>
+      <div class="logo">
+        <router-link to="/"
+          ><img src="/img/blogs.engineering.svg" height="100" width="100"
+        /></router-link>
+      </div>
       <h1 class="mb-3">blogs.engineering</h1>
       <p>discover great engineering blogs by great developers</p>
       <div class="mt-4">
-        <a
-          class="github-button"
-          href="https://github.com/nshntarora/blogs.engineering"
-          data-size="large"
-          data-show-count="true"
-          aria-label="Star nshntarora/blogs.engineering on GitHub"
-          >Star</a
-        >
+        <div class="d-flex align-items-center">
+          <a
+            class="github-button"
+            href="https://github.com/nshntarora/blogs.engineering"
+            data-size="large"
+            data-show-count="true"
+            aria-label="Star nshntarora/blogs.engineering on GitHub"
+            >Star</a
+          >
+          <a
+            class="ml-3"
+            href="https://github.com/nshtarora/blogs.engineering"
+            target="_blank"
+          >
+            Contribute to this project on GitHub</a
+          >
+        </div>
       </div>
     </header>
     <router-view />
@@ -81,6 +92,9 @@ blockquote {
     font-family: "Noto Sans", sans-serif;
     font-size: 0.9rem;
   }
+}
+
+.logo {
   a {
     color: inherit;
     text-decoration: none;
