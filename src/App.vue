@@ -29,6 +29,10 @@
       </div>
     </header>
     <router-view />
+    <div class="mt-4 px-4 font-size-sm">
+      Created by
+      <a href="https://twitter.com/nshntarora" target="_blank">@nshntarora</a>
+    </div>
   </div>
 </template>
 
