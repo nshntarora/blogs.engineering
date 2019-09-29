@@ -1,0 +1,232 @@
+[
+  {
+    "name": "Jason Laster",
+    "tags": "frontend development",
+    "feed": "",
+    "twitter": "@jasonlaster11",
+    "newsletter": "",
+    "icon": "http://jasonlaster.github.io/favicon.ico",
+    "description": "Developer at Mozilla On Firefox DevTools",
+    "image": "http://jasonlaster.github.io/images/avatar.jpg",
+    "link": "http://jasonlaster.github.io/"
+  },
+  {
+    "name": "Joshua Nelson",
+    "tags": "performance,software engineering",
+    "feed": "https://subsecond.dev/rss.xml",
+    "twitter": "@nelsonjoshpaul",
+    "newsletter": "",
+    "icon": "https://subsecond.dev/favicon.ico",
+    "description": "Developer at Airbnb",
+    "link": "https://subsecond.dev/"
+  },
+  {
+    "name": "Nemo (a.k.a Abhay Rana)",
+    "tags": "DIY,tips,open source,devops",
+    "feed": "https://captnemo.in/atom.xml",
+    "twitter": "@captn3m0",
+    "newsletter": "",
+    "icon": "https://captnemo.in/favicon.ico",
+    "description": "Developer at Razorpay",
+    "image": "https://captnemo.in/img/favicon.png",
+    "link": "https://captnemo.in/"
+  },
+  {
+    "name": "Armin Ronacher",
+    "tags": "python",
+    "feed": "http://lucumr.pocoo.org/feed.atom",
+    "twitter": "@mitsuhiko",
+    "newsletter": "",
+    "icon": "http://lucumr.pocoo.org/favicon.ico",
+    "description": "Creator of Flask",
+    "image": "",
+    "link": "http://lucumr.pocoo.org/"
+  },
+  {
+    "name": "Andrew Nesbitt",
+    "tags": "ruby,open source",
+    "feed": "https://nesbitt.io/feed.xml",
+    "twitter": "@teabass",
+    "newsletter": "",
+    "icon": "https://nesbitt.io/favicon.ico",
+    "description": "Creator of Octobox and Libraries.io",
+    "image": "https://github.com/octobox.png",
+    "link": "http://nesbitt.io/"
+  },
+  {
+    "name": "Jeff Attwood",
+    "tags": "programming,security,DIY",
+    "feed": "http://feeds.feedburner.com/codinghorror?format=xml",
+    "twitter": "@codinghorror",
+    "newsletter": "",
+    "icon": "https://blog.codinghorror.com/favicon.ico",
+    "description": "Co-Founder of StackOverflow and Discourse",
+    "image": "https://blog.codinghorror.com/assets/images/codinghorror-app-icon.png",
+    "link": "https://blog.codinghorror.com/"
+  },
+  {
+    "name": "Troy Hunt",
+    "tags": "security,open source,programming",
+    "feed": "https://feeds.feedburner.com/TroyHunt",
+    "twitter": "@troyhunt",
+    "newsletter": "",
+    "icon": "https://www.troyhunt.com/favicon.ico",
+    "description": "Creator of Have I Been Pwned and Microsoft Regional Director",
+    "image": "https://www.troyhunt.com/content/images/2017/01/1.jpg",
+    "link": "https://www.troyhunt.com/"
+  },
+  {
+    "name": "Henry Zhu",
+    "tags": "frontend development,javascript,open source",
+    "feed": "https://www.henryzoo.com/rss.xml",
+    "twitter": "@left_pad",
+    "newsletter": "",
+    "icon": "https://www.henryzoo.com/favicon.ico",
+    "description": "Maintainer of Babel",
+    "image": "",
+    "link": "https://www.henryzoo.com/"
+  },
+  {
+    "name": "Mike McQuaid",
+    "tags": "ruby,open source",
+    "feed": "https://mikemcquaid.com/atom.xml",
+    "twitter": "@MikeMcQuaid",
+    "newsletter": "",
+    "icon": "/images/favicon.ico",
+    "description": "Creator of Homebrew, Senior Engineer at GitHub",
+    "image": "https://mikemcquaid.com/images/header.jpg",
+    "link": "https://mikemcquaid.com/"
+  },
+  {
+    "name": "André Staltz",
+    "tags": "",
+    "feed": "",
+    "twitter": "@andrestaltz",
+    "newsletter": "",
+    "icon": "https://staltz.com/favicon.ico",
+    "description": "Creator of CycleJS, Building Manyverse(https://www.manyver.se/)",
+    "image": "",
+    "link": "https://staltz.com/blog.html"
+  },
+  {
+    "name": "Nicholas C. Zakas",
+    "tags": "",
+    "feed": "http://feeds.feedburner.com/nczonline/",
+    "twitter": "@slicknet",
+    "newsletter": "",
+    "icon": "/images/favicon.png",
+    "description": "Creator of ESLint",
+    "image": "https://humanwhocodes.com/images/logo-medium.png",
+    "link": "https://humanwhocodes.com/"
+  },
+  {
+    "name": "Rahul Kadyan",
+    "tags": "software architecture,frontend development,vue",
+    "feed": "",
+    "twitter": "@znck0",
+    "newsletter": "",
+    "icon": "/favicon.ico",
+    "description": "Core Team at Vue.js, Developer at Myntra",
+    "image": "https://znck.dev/social-image.png",
+    "link": "https://znck.dev/"
+  },
+  {
+    "name": "Siddharth Kshetrapal",
+    "tags": "react,frontend development,software architecture",
+    "feed": "",
+    "twitter": "@siddharthkp",
+    "newsletter": "",
+    "icon": "/favicon-32x32.png",
+    "description": "Developer at CodeSandbox. Built bundlesize",
+    "image": "",
+    "link": "https://sid.st/blog/"
+  },
+  {
+    "name": "Guillermo Rauch",
+    "tags": "",
+    "feed": "",
+    "twitter": "@rauchg",
+    "newsletter": "",
+    "icon": "https://rauchg.com/favicon.ico",
+    "description": "Founder of ZEIT",
+    "image": "",
+    "link": "https://rauchg.com/essays/"
+  },
+  {
+    "name": "Addy Osmani",
+    "tags": "performance,frontend development,javascript",
+    "feed": "",
+    "twitter": "@addyosmani",
+    "newsletter": "",
+    "icon": "/assets/images/favicons/favicon-16x16.png",
+    "description": "Engineering Manager at Google Chrome",
+    "image": "https://addyosmani.com/assets/images/addy.jpg",
+    "link": "https://addyosmani.com/blog/"
+  },
+  {
+    "name": "Max Stoiber",
+    "tags": "react,frontend development,javascript",
+    "feed": "https://mxstbr.com/feed.json",
+    "twitter": "@mxstbr",
+    "newsletter": "",
+    "icon": "/static/images/favicon_new.png",
+    "description": "Engineer at GitHub. Built spectrum.chat",
+    "image": "",
+    "link": "https://mxstbr.com/thoughts/"
+  },
+  {
+    "name": "Dan Abramov",
+    "tags": "react,frontend development,software architecture",
+    "feed": "https://overreacted.io/rss.xml",
+    "twitter": "@dan_abramov",
+    "newsletter": "",
+    "icon": "https://overreacted.io/favicon.ico",
+    "description": "Creator of Redux. Core team at React.js",
+    "image": "https://overreacted.io/static/profile-pic-c715447ce38098828758e525a1128b87.jpg",
+    "link": "https://overreacted.io"
+  },
+  {
+    "name": "Kent C. Dodds",
+    "tags": "react,frontend development,software testing",
+    "feed": "https://kentcdodds.com/blog/rss.xml",
+    "twitter": "@kentcdodds",
+    "newsletter": "",
+    "icon": "https://kentcdodds.com/favicon.ico",
+    "description": "Creator of react-testing-library. Full-time Educator",
+    "image": "https://kentcdodds.com/static/kent-985f8a0db8a37e47da2c07080cffa865.png",
+    "link": "https://kentcdodds.com/"
+  },
+  {
+    "name": "David Walsh",
+    "tags": "javascript,frontend development",
+    "feed": "https://davidwalsh.name/feed",
+    "twitter": "@davidwalshblog",
+    "newsletter": "",
+    "icon": "https://davidwalsh.name/favicon.ico",
+    "description": "Senior Developer at Mozilla",
+    "image": "https://davidwalsh.name/wp-content/themes/punky/images/logo.png",
+    "link": "https://davidwalsh.name/"
+  },
+  {
+    "name": "Una Kravets",
+    "tags": "frontend development,design",
+    "feed": "https://una.im/feed.xml",
+    "twitter": "@Una",
+    "newsletter": "",
+    "icon": "/images/favicon.png",
+    "description": "Developer Relations at Google",
+    "image": "https://una.im/images/social-cover.png",
+    "link": "https://una.im"
+  },
+  {
+    "name": "Joel Spolsky",
+    "tags": "software architecture,tips,programming",
+    "RSS Feed": "https://www.joelonsoftware.com/rss.xml",
+    "twitter": "@spolsky",
+    "newsletter": "",
+    "icon": "https://i2.wp.com/www.joelonsoftware.com/wp-content/uploads/2016/12/11969842.jpg?fit=192%2C192&ssl=1",
+    "description": "Co-Founder of FogCreek, StackOverflow, and Trello",
+    "image": "https://i2.wp.com/www.joelonsoftware.com/wp-content/uploads/2016/12/11969842.jpg?fit=400%2C400&ssl=1",
+    "link": "https://www.joelonsoftware.com/"
+  }
+]
