@@ -1,10 +1,10 @@
 <template>
-  <div class="layout">
+  <div class="container-fluid">
     <header class="header">
-      <a href="/"
+      <router-link to="/"
         ><img src="/img/blogs.engineering.svg" height="100" width="100"
-      /></a>
-      <h1>blogs.engineering</h1>
+      /></router-link>
+      <h1 class="mb-3">blogs.engineering</h1>
       <p>discover great engineering blogs by great developers</p>
     </header>
     <router-view />
@@ -12,17 +12,16 @@
 </template>
 
 <style lang="scss">
+@import "./assets/bootstrap/bootstrap.scss";
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,800&display=swap");
 
 body {
   font-family: "Noto Sans", sans-serif;
   /* color: #333; */
   color: #fff;
-  line-height: 2;
-  overflow-y: scroll;
   margin-bottom: 5rem;
-  padding: 1rem;
   background-color: #242424;
+  padding-right: 16px;
 }
 
 a {
@@ -63,6 +62,7 @@ blockquote {
     margin-top: 1rem;
     opacity: 1;
     font-weight: 900;
+    font-size: 2rem;
   }
   p {
     opacity: 0.75;

@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <div>
     <div class="no-results-found" v-if="developers.length === 0">
       <img class="error-image" src="/img/search.svg" height="250" width="250" />
       <div class="title">
@@ -28,14 +28,14 @@
           :key="developer.twitter"
         >
           <img
-            class="image"
+            class="image mb-0"
             :src="`https://avatars.io/twitter/${developer.twitter}`"
             height="16"
             width="16"
             v-if="developer.twitter"
           />
           <img
-            class="image placeholder"
+            class="image placeholder mb-0"
             src="/img/blogs.engineering.placeholder.png"
             height="16"
             width="16"
@@ -45,8 +45,8 @@
         </div>
       </div>
     </div>
-    <div class="main-content" v-else>
-      <div class="main">
+    <div class="row" v-else>
+      <div class="col-md-9">
         <!-- <h1>
           My Feed
         </h1> -->
@@ -77,9 +77,9 @@
           </div>
         </div>
       </div>
-      <div class="sidebar">
-        <div class="sidebar-block">
-          <div class="sidebar-title">
+      <div class="col-md-3">
+        <div class="sidebar-block mb-4">
+          <div class="sidebar-title mb-2">
             developers powering this feed
           </div>
           <div
@@ -107,7 +107,7 @@
           </div>
         </div>
         <div class="sidebar-block" v-if="failedResults.length">
-          <div class="sidebar-title">
+          <div class="sidebar-title mb-2">
             developers we were unable to fetch the feed for
           </div>
           <div
@@ -136,7 +136,7 @@
         </div>
       </div>
     </div>
-  </Layout>
+  </div>
 </template>
 
 <script>

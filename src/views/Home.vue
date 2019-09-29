@@ -1,11 +1,11 @@
 <template>
-  <Layout>
-    <div class="main-content">
-      <div class="main">
+  <div>
+    <div class="row flex-column-reverse flex-lg-row">
+      <div class="col-md-9">
         <div>
-          <div class="developers-wrapper">
+          <div class="developers-wrapper row no-gutters">
             <div
-              class="no-results-found"
+              class="no-results-found col-md-12"
               v-if="searchText && searchResults.length === 0"
             >
               <img src="/img/search.svg" height="250" width="250" />
@@ -17,131 +17,142 @@
               </div>
             </div>
             <div
-              class="developer-card"
+              class="col-md-6 pl-3 pb-3"
               v-for="developer in searchText ? searchResults : sortedDevelopers"
               :key="developer.link"
             >
-              <img
-                class="image"
-                :src="`https://avatars.io/twitter/${developer.twitter}`"
-                height="100"
-                width="100"
-                v-if="developer.twitter"
-              />
-              <img
-                class="image placeholder"
-                src="/img/blogs.engineering.placeholder.png"
-                height="100"
-                width="100"
-                v-else
-              />
-              <div class="content">
-                <div class="name">
-                  {{ developer.name }}
-                </div>
-                <div class="twitter">
-                  <img src="/img/twitter.svg" />
-                  <a
-                    :href="`https://twitter.com/${developer.twitter}`"
-                    target="_blank"
-                  >
-                    {{ developer.twitter }}
-                  </a>
-                </div>
-                <div class="description" v-if="developer.description">
-                  {{ developer.description.slice(0, 50) }}
-                </div>
-                <a class="link" :href="developer.link" target="_blank">{{
-                  developer.link
-                }}</a>
+              <div class="developer-card w-100">
+                <img
+                  class="image"
+                  :src="`https://avatars.io/twitter/${developer.twitter}`"
+                  height="100"
+                  width="100"
+                  v-if="developer.twitter"
+                />
+                <img
+                  class="image placeholder"
+                  src="/img/blogs.engineering.placeholder.png"
+                  height="100"
+                  width="100"
+                  v-else
+                />
+                <div class="content">
+                  <div class="name">
+                    {{ developer.name }}
+                  </div>
+                  <div class="twitter">
+                    <img src="/img/twitter.svg" />
+                    <a
+                      :href="`https://twitter.com/${developer.twitter}`"
+                      target="_blank"
+                    >
+                      {{ developer.twitter }}
+                    </a>
+                  </div>
+                  <div class="description" v-if="developer.description">
+                    {{ developer.description.slice(0, 50) }}
+                  </div>
+                  <a class="link" :href="developer.link" target="_blank">{{
+                    developer.link
+                  }}</a>
 
-                <!-- <div
+                  <!-- <div
                   class="tags"
                   v-if="developer.tags"
                 >
                   Tagged with: {{ developer.tags }}
                 </div> -->
 
-                <div class="latest-posts" v-if="developer.feed">
-                  <span
-                    class="latest-posts-loading"
-                    v-if="
-                      fetchedPosts &&
-                        fetchedPosts[developer.twitter] &&
-                        fetchedPosts[developer.twitter].state === 'loading'
-                    "
-                  >
-                    Loading...
-                  </span>
-                  <span
-                    v-else-if="fetchedPosts && fetchedPosts[developer.twitter]"
-                    class="latest-posts-button"
-                    @click="clearLatestPosts(developer)"
-                  >
-                    Hide Latest Posts
-                  </span>
-                  <span
-                    v-else
-                    class="latest-posts-button"
-                    @click="getLatestPosts(developer)"
-                  >
-                    View Latest Posts
-                  </span>
-                  <div
-                    class="latest-posts-list"
-                    v-if="fetchedPosts && fetchedPosts[developer.twitter]"
-                  >
+                  <div class="latest-posts" v-if="developer.feed">
+                    <span
+                      class="latest-posts-loading"
+                      v-if="
+                        fetchedPosts &&
+                          fetchedPosts[developer.twitter] &&
+                          fetchedPosts[developer.twitter].state === 'loading'
+                      "
+                    >
+                      Loading...
+                    </span>
+                    <span
+                      v-else-if="
+                        fetchedPosts && fetchedPosts[developer.twitter]
+                      "
+                      class="latest-posts-button"
+                      @click="clearLatestPosts(developer)"
+                    >
+                      Hide Latest Posts
+                    </span>
+                    <span
+                      v-else
+                      class="latest-posts-button"
+                      @click="getLatestPosts(developer)"
+                    >
+                      View Latest Posts
+                    </span>
                     <div
-                      v-if="fetchedPosts[developer.twitter].state === 'success'"
+                      class="latest-posts-list"
+                      v-if="fetchedPosts && fetchedPosts[developer.twitter]"
                     >
                       <div
-                        class="post"
-                        v-for="(post, index) in fetchedPosts[developer.twitter]
-                          .posts"
-                        :key="index"
+                        v-if="
+                          fetchedPosts[developer.twitter].state === 'success'
+                        "
                       >
-                        <a :href="post.link" target="_blank" class="post-title">
-                          {{ post.title }}
-                        </a>
-                        <div class="post-updated">
-                          {{ new Date(post.updated).toDateString() }}
+                        <div
+                          class="post"
+                          v-for="(post, index) in fetchedPosts[
+                            developer.twitter
+                          ].posts"
+                          :key="index"
+                        >
+                          <a
+                            :href="post.link"
+                            target="_blank"
+                            class="post-title"
+                          >
+                            {{ post.title }}
+                          </a>
+                          <div class="post-updated">
+                            {{ new Date(post.updated).toDateString() }}
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div v-else>
-                      {{ fetchedPosts[developer.twitter].error }}
+                      <div v-else>
+                        {{ fetchedPosts[developer.twitter].error }}
+                      </div>
                     </div>
                   </div>
+                  <div v-else>
+                    <a
+                      class="ask-feed-link"
+                      :href="
+                        `https://twitter.com/intent/tweet?text=${encodeURIComponent(
+                          `Hi ${developer.twitter}, I wanted to subscribe to your blog using your RSS or Atom feed, but I'm unable to find it. Can you share the feed link with @nshntarora for blogs.engineering?`
+                        )}`
+                      "
+                      target="_blank"
+                      >Ask them for their feed</a
+                    >
+                  </div>
                 </div>
-                <div v-else>
-                  <a
-                    class="ask-feed-link"
-                    :href="
-                      `https://twitter.com/intent/tweet?text=${encodeURIComponent(
-                        `Hi ${developer.twitter}, I wanted to subscribe to your blog using your RSS or Atom feed, but I'm unable to find it. Can you share the feed link with @nshntarora for blogs.engineering?`
-                      )}`
-                    "
-                    target="_blank"
-                    >Ask them for their feed</a
-                  >
-                </div>
-              </div>
 
-              <div class="top-right">
-                <div v-if="developer.feed">
-                  <div
-                    class="button"
-                    v-if="!isDeveloperAdded(developer)"
-                    @click="addDeveloperToFeed(developer)"
-                  >
-                    Add to feed
-                  </div>
-                  <div
-                    class="add-to-feed button"
-                    v-else
-                    @click="removeDeveloperFromFeed(developer)"
-                  >
-                    Added
+                <div class="top-right">
+                  <div v-if="developer.feed">
+                    <div
+                      class="button"
+                      v-if="!isDeveloperAdded(developer)"
+                      @click="addDeveloperToFeed(developer)"
+                    >
+                      Add to feed
+                    </div>
+                    <div
+                      class="add-to-feed button"
+                      v-else
+                      @click="removeDeveloperFromFeed(developer)"
+                    >
+                      Added
+                    </div>
                   </div>
                 </div>
               </div>
@@ -149,10 +160,10 @@
           </div>
         </div>
       </div>
-      <div class="sidebar">
-        <div class="search-wrapper">
+      <div class="col-md-3">
+        <div class="search-wrapper w-100">
           <input
-            class="search-input"
+            class="search-input w-100"
             v-model="searchText"
             placeholder="Search..."
           />
@@ -179,7 +190,7 @@
         View feed
       </router-link>
     </div>
-  </Layout>
+  </div>
 </template>
 
 <script>
@@ -350,9 +361,6 @@ export default {
   border: 1px solid #000;
   border-radius: 1rem;
   overflow: hidden;
-  margin-bottom: 1rem;
-  width: 45%;
-  margin-right: 1rem;
   /* box-shadow: 0px 1px 12px #00000061; */
   padding: 1rem;
   background-color: #333;
