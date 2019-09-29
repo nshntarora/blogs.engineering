@@ -244,6 +244,15 @@
     "newsletter": "",
     "description": "Member of Technical Staff at VMWare. Project Member, Golang.",
     "link": "https://dave.cheney.net"
+  },
+  {
+    "name": "Aaron Patterson",
+    "tags": "ruby, ruby on rails",
+    "feed": "http://tenderlovemaking.com/atom.xml",
+    "twitter": "@tenderlove",
+    "newsletter": "",
+    "description": "Core team at Ruby on Rails. Software Engineer at GitHub",
+    "link": "http://tenderlovemaking.com/"
   }
   
 ]
