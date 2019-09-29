@@ -221,12 +221,19 @@
   {
     "name": "Joel Spolsky",
     "tags": "software architecture,tips,programming",
-    "RSS Feed": "https://www.joelonsoftware.com/rss.xml",
+    "feed": "https://www.joelonsoftware.com/rss.xml",
     "twitter": "@spolsky",
     "newsletter": "",
-    "icon": "https://i2.wp.com/www.joelonsoftware.com/wp-content/uploads/2016/12/11969842.jpg?fit=192%2C192&ssl=1",
     "description": "Co-Founder of FogCreek, StackOverflow, and Trello",
-    "image": "https://i2.wp.com/www.joelonsoftware.com/wp-content/uploads/2016/12/11969842.jpg?fit=400%2C400&ssl=1",
     "link": "https://www.joelonsoftware.com/"
+  },
+  {
+    "name": "Steve Francia",
+    "tags": "golang, programming, open source",
+    "feed": "http://feeds.feedburner.com/spf13",
+    "twitter": "@spf13",
+    "newsletter": "",
+    "description": "Golang Product Lead at Google. Creator of Hugo.",
+    "link": "https://spf13.com/"
   }
 ]
