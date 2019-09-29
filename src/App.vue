@@ -20,7 +20,7 @@
           >
           <a
             class="ml-3"
-            href="https://github.com/nshtarora/blogs.engineering"
+            href="https://github.com/nshntarora/blogs.engineering"
             target="_blank"
           >
             Contribute to this project on GitHub</a
