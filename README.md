@@ -1,7 +1,5 @@
 
-# blogs.engineering
-
-discover and subscribe to great engineering blogs by great developers
+<img src="https://blogs.engineering/img/header.png" />
 
 ### Project Setup
 
