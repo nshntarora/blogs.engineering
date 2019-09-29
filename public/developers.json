@@ -253,6 +253,14 @@
     "newsletter": "",
     "description": "Core team at Ruby on Rails. Software Engineer at GitHub",
     "link": "http://tenderlovemaking.com/"
+  },
+  {
+    "name": "Pat Shaughnessy",
+    "tags": "ruby, ruby on rails, rust",
+    "feed": "http://feeds.feedburner.com/patshaughnessy",
+    "twitter": "@pat_shaughnessy",
+    "newsletter": "",
+    "description": "Author of Ruby Under a Microscope. Ruby developer at Apple",
+    "link": "http://patshaughnessy.net"
   }
-  
 ]
