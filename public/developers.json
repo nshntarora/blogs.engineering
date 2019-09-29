@@ -289,5 +289,23 @@
     "newsletter": "",
     "description": "Design Engineer at Penske Media (PMC)",
     "link": "https://notlaura.com/blog/"
+  },
+  {
+    "name": "Brad Frost",
+    "tags": "design, frontend development, javascript",
+    "feed": "http://bradfrost.com/blog/category/post/feed/",
+    "twitter": "@brad_frost",
+    "newsletter": "",
+    "description": "Author of Atomic Design",
+    "link": "https://bradfrost.com/blog/"
+  },
+  {
+    "name": "Jake Wharton",
+    "tags": "android, java",
+    "feed": "https://jakewharton.com/feed.xml",
+    "twitter": "@JakeWharton",
+    "newsletter": "",
+    "description": "Android Engineer at Google",
+    "link": "https://jakewharton.com/blog/"
   }
 ]
