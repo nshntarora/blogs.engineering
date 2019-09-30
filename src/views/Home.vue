@@ -43,7 +43,12 @@
                   <div class="twitter">
                     <img src="/img/twitter.svg" />
                     <a
-                      :href="`https://twitter.com/${developer.twitter}`"
+                      :href="
+                        `https://twitter.com/${developer.twitter.replace(
+                          '@',
+                          ''
+                        )}`
+                      "
                       target="_blank"
                     >
                       {{ developer.twitter }}
