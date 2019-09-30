@@ -69,7 +69,7 @@
                 </div> -->
 
                   <div class="latest-posts" v-if="developer.feed">
-                    <div
+                    <span
                       class="latest-posts-loading"
                       v-if="
                         fetchedPosts &&
@@ -78,8 +78,8 @@
                       "
                     >
                       Loading...
-                    </div>
-                    <div
+                    </span>
+                    <span
                       v-else-if="
                         fetchedPosts && fetchedPosts[developer.twitter]
                       "
@@ -87,14 +87,14 @@
                       @click="clearLatestPosts(developer)"
                     >
                       Hide Latest Posts
-                    </div>
-                    <div
+                    </span>
+                    <span
                       v-else
                       class="latest-posts-button"
                       @click="getLatestPosts(developer)"
                     >
                       View Latest Posts
-                    </div>
+                    </span>
                     <div
                       class="latest-posts-list mt-2"
                       v-if="fetchedPosts && fetchedPosts[developer.twitter]"
@@ -453,6 +453,7 @@ export default {
   font-size: 0.75rem;
   cursor: pointer;
   border-bottom: 3px solid transparent;
+  user-select: none;
 }
 
 .latest-posts-loading {
