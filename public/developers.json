@@ -56,7 +56,7 @@
   {
     "name": "Jeff Attwood",
     "tags": "programming,security,DIY",
-    "feed": "http://feeds.feedburner.com/codinghorror?format=xml",
+    "feed": "https://feeds.feedburner.com/codinghorror?format=xml",
     "twitter": "@codinghorror",
     "newsletter": "",
     "icon": "https://blog.codinghorror.com/favicon.ico",
@@ -67,7 +67,7 @@
   {
     "name": "Troy Hunt",
     "tags": "security,open source,programming",
-    "feed": "https://feeds.feedburner.com/TroyHunt",
+    "feed": "https://feeds.feedburner.com/TroyHunt?format=xml",
     "twitter": "@troyhunt",
     "newsletter": "",
     "icon": "https://www.troyhunt.com/favicon.ico",
@@ -111,7 +111,7 @@
   {
     "name": "Nicholas C. Zakas",
     "tags": "",
-    "feed": "http://feeds.feedburner.com/nczonline/",
+    "feed": "https://feeds.feedburner.com/nczonline?format=xml",
     "twitter": "@slicknet",
     "newsletter": "",
     "icon": "/images/favicon.png",
@@ -230,7 +230,7 @@
   {
     "name": "Steve Francia",
     "tags": "golang, programming, open source",
-    "feed": "http://feeds.feedburner.com/spf13",
+    "feed": "https://feeds.feedburner.com/spf13?format=xml",
     "twitter": "@spf13",
     "newsletter": "",
     "description": "Golang Product Lead at Google. Creator of Hugo.",
@@ -257,7 +257,7 @@
   {
     "name": "Pat Shaughnessy",
     "tags": "ruby, ruby on rails, rust",
-    "feed": "http://feeds.feedburner.com/patshaughnessy",
+    "feed": "https://feeds.feedburner.com/patshaughnessy?format=xml",
     "twitter": "@pat_shaughnessy",
     "newsletter": "",
     "description": "Author of Ruby Under a Microscope. Ruby developer at Apple",
@@ -266,7 +266,7 @@
   {
     "name": "Rachel Nabors",
     "tags": "animation, design, react",
-    "feed": "http://feeds.feedburner.com/RachelNabors",
+    "feed": "https://feeds.feedburner.com/RachelNabors?format=xml",
     "twitter": "@rachelnabors",
     "newsletter": "",
     "description": "Core Team at React.js, Web Animations Expert at the W3C",
@@ -284,7 +284,7 @@
   {
     "name": "Lara Schenck",
     "tags": "css, frontend development",
-    "feed": "https://feeds.feedburner.com/notlaura",
+    "feed": "https://feeds.feedburner.com/notlaura?format=xml",
     "twitter": "@laras126",
     "newsletter": "",
     "description": "Design Engineer at Penske Media (PMC)",

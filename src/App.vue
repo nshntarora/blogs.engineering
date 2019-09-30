@@ -1,6 +1,9 @@
 <template>
   <div class="container-fluid">
-    <header class="header">
+    <header class="header position-relative">
+      <div @click="handleFeedLinkClick" class="feed-link button">
+        My Feed
+      </div>
       <div class="logo">
         <router-link to="/"
           ><img src="/img/blogs.engineering.svg" height="100" width="100"
@@ -35,6 +38,22 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  name: "App",
+  methods: {
+    handleFeedLinkClick() {
+      const devsInStore = window.localStorage.getItem("devs");
+      if (devsInStore) {
+        this.$router.push(`/feed?devs=${encodeURIComponent(devsInStore)}`);
+      } else {
+        this.$router.push(`/feed`);
+      }
+    }
+  }
+};
+</script>
 
 <style lang="scss">
 @import "./assets/bootstrap/bootstrap.scss";
@@ -122,5 +141,27 @@ blockquote {
 
 .sidebar {
   width: 25%;
+}
+
+.feed-link {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.button {
+  border: 1px solid #000;
+  background-color: #f06a35;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 0.75rem;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: #e64709;
 }
 </style>

@@ -64,7 +64,7 @@
                 </div> -->
 
                   <div class="latest-posts" v-if="developer.feed">
-                    <span
+                    <div
                       class="latest-posts-loading"
                       v-if="
                         fetchedPosts &&
@@ -73,8 +73,8 @@
                       "
                     >
                       Loading...
-                    </span>
-                    <span
+                    </div>
+                    <div
                       v-else-if="
                         fetchedPosts && fetchedPosts[developer.twitter]
                       "
@@ -82,14 +82,14 @@
                       @click="clearLatestPosts(developer)"
                     >
                       Hide Latest Posts
-                    </span>
-                    <span
+                    </div>
+                    <div
                       v-else
                       class="latest-posts-button"
                       @click="getLatestPosts(developer)"
                     >
                       View Latest Posts
-                    </span>
+                    </div>
                     <div
                       class="latest-posts-list mt-2"
                       v-if="fetchedPosts && fetchedPosts[developer.twitter]"
@@ -193,12 +193,13 @@
     </div>
     <div class="subscribed-footer" v-if="selectedDevelopers.length">
       You've added {{ selectedDevelopers.length }} developers to your feed
-      <router-link
+      <div
+        @click="handleViewFeedClick"
         :to="`/feed?devs=${encodeURIComponent(selectedDevelopers.join(','))}`"
         class="button"
       >
         View feed
-      </router-link>
+      </div>
     </div>
   </div>
 </template>
@@ -253,6 +254,14 @@ export default {
     }
   },
   methods: {
+    handleViewFeedClick() {
+      const devsInStore = window.localStorage.getItem("devs");
+      if (devsInStore) {
+        this.$router.push(`/feed?devs=${encodeURIComponent(devsInStore)}`);
+      } else {
+        this.$router.push(`/feed`);
+      }
+    },
     handleTagClick(tag) {
       if (this.selectedTags.includes(tag)) {
         this.selectedTags.splice(
@@ -350,10 +359,19 @@ export default {
       } else {
         this.searchResults = this.fuse.search(query);
       }
+    },
+    selectedDevelopers(devs) {
+      window.localStorage.setItem("devs", devs.join(","));
     }
   },
   mounted() {
     this.fuse = new Fuse(this.filteredDevelopers, fuseOptions);
+
+    const devsInStore = window.localStorage.getItem("devs");
+    if (devsInStore) {
+      const devsArray = devsInStore.split(",");
+      this.selectedDevelopers = devsArray;
+    }
   }
 };
 </script>
