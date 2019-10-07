@@ -1,4 +1,15 @@
-[
+[ 
+  {
+"name": "Markus Oberlehner",
+    "tags": "frontend development vuejs advanced patterns",
+    "feed": "https://markus.oberlehner.net/index.xml",
+    "twitter": "@maoberlehner",
+    "newsletter": "",
+    "icon": "https://markus.oberlehner.net/images/icon512x512.png",
+    "description": "Open Source is my passion. I'm the creator of vuex-map-fields, vue-lazy-hydration and node-sass-magic-importer.",
+    "image": "https://markus.oberlehner.net/images/markus-oberlehner-meta-2017-06.jpg",
+    "link": "https://markus.oberlehner.net/"
+},
   {
     "name": "Jason Laster",
     "tags": "frontend development",
