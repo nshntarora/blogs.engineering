@@ -316,5 +316,14 @@
     "newsletter": "",
     "description": "Android Engineer at Trello",
     "link": "https://blog.danlew.net/"
+  },
+  {
+    "name": "Dave Ceddia",
+    "tags": "react, frontend development, javascript",
+    "feed": "",
+    "twitter": "@dceddia",
+    "newsletter": "",
+    "description": "Author of Pure React",
+    "link": "https://daveceddia.com/archives/"
   }
 ]
